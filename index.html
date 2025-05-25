@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="display">
+         <h1>Enter Date</h1>
+         <div class="inputsTag">
+            <input
+               type="number"
+               id="date"
+               placeholder="Enter Day"
+               min="1"
+               max="31"
+            />
+            <input
+               type="number"
+               id="month"
+               placeholder="Enter Month"
+               min="1"
+               max="12"
+            />
+            <input
+               type="number"
+               id="year"
+               placeholder="Enter Year"
+               min="1900"
+            />
+         </div>
+         <div>
+            <button onclick="ageCheck()">AGE CHECK</button>
+            <button onclick="eventCheck()">CHECK EVENT</button>
+         </div>
+         <hr />
+         <div class="timer">
+            <div id="time">
+               <h2 id="years">00</h2>
+               <h2 id="months">00</h2>
+               <h2 id="days">00</h2>
+               <h2 id="hr">00</h2>
+               <h2 id="min">00</h2>
+               <h2 id="sec">00</h2>
+            </div>
+            <div id="text">
+               <p>Year</p>
+               <p>Month</p>
+               <p>Days</p>
+               <p>Hr</p>
+               <p>Min</p>
+               <p>Sec</p>
+            </div>
+         </div>
+      </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>
